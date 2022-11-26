@@ -4,10 +4,10 @@ int main()
 {
     int zero=0;
     int dvn=0, dvs=0;
-		int resu=zero/zero;
-		printf("%i\n",resu); //results 1, no gcc warnings
-		int resu2=0/0;
-		printf("%i\n",resu2);//results "floating point exception"
+int resu=zero/zero;
+printf("%i\n",resu); //results 1, no gcc warnings
+int resu2=0/0;
+printf("%i\n",resu2);//results "floating point exception"
     int resu3=0/zero;
     printf("%i\n",resu3);//results 0 if you comment the lines above, otherwise no output with gcc warning "division by zero"
     int resu4=zero/0;
